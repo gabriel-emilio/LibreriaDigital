@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditarEditorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ej15.css">   <!--SI No toma el estilo, se le tiene que poner una barra al inicio de la referencia para que lo tome -->
+    
+</head>
+
+<body>
+
+
+    <h1> <Strong> Modifique los datos de la Editorial </Strong></h1>
+
+   
+
+
+
+    <form action="/actualizar-editorial"   method="POST">   <!-- agregamos el metodo igual que en los controladores y ponemos que el metodo es POST-->
+        <p th:if="${error != null}" th:text="${error}"  style="color:red;"> </p> <!-- SI HAY ERROR CON ESTO LO MOSTRAMOS POR HTML-->
+        <div class="mb-3">
+           <input type="hidden" class="form-control" name="id" th:value="${id}">
+          <label for="nombre" class="form-label"> Nombre </label>
+          <input type="text" class="form-control" name="nuevoEditorial" th:value="${nombre}">
+        
+        </div>
+       
+
+        
+
+          <div class="mb-4">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Acepto Términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn btn-success">Guardar Cambios</button>
+      </form>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body{
+
+    width: 50%;
+    margin-left: 35%;
+
+    background: none;
+    background-color: rgb(202, 224, 240);
+
+}
+
+h1
+{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: normal;
+
+color:green;
+}
+
+
+*
+ {
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.mb-3
+{
+
+   font-weight: bold; 
+
+}
+
+.mb-4
+
+{
+    width: 50%;
+    margin-left: 3%;
+  font-weight: lighter;
+}
+
+.form-control 
+{
+    max-width: 350px;
+}

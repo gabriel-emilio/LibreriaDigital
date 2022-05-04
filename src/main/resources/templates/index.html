@@ -1,0 +1,61 @@
+><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Website Landing Page</title>
+    <link rel=" stylesheet" href="libreria.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+             <a href="#" ><img src="https://pngimg.com/uploads/book/book_PNG51026.png " class="logo"  width="70"
+                height="65"> </a>
+             <u1>
+                 <li><a href= "/"> <Strong>Home</Strong> </a></li>
+                 <li><a href= "/llibro" target="_blank">  <strong> Libros </strong> </a></li>
+                 <li><a href= "/lautor"target="_blank" > <strong>Autores </strong> </a></li>
+                 <li><a href= "/leditorial"target="_blank"> <strong>Editoriales</strong> </a></li>
+
+             </u1>
+
+        </header>
+        <div class="content">
+            <div class=" textBox">
+               <h2> Tu Biblioteca digital <br> Llegó <span>CON-CON</span></h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimos 
+                   modi pariatur sunt corporis, eius reprehenderit architecto aliquam illo sequi 
+                   dolores sapiente eaque.</p>
+            <a href="#"> Saber más </a>
+            </div>
+
+            <div class=" imgBox">
+                <img src="libro1.png"  class="libro" >
+     
+            </div>
+        </div>
+        <u1 class="thumb">
+            
+            <li><a href= "/rlibro" target="_blank"> <h5>Cargar Libro</h5>  <img src="libro1.png" onclick="imgSlider('libro1.png');  changeCircleColor('#017143')"></a></li>
+            <li><a href= "/rautor" target="_blank"><h5>Cargar Autor</h5><img src="editor.png" onclick="imgSlider('editor.png');  changeCircleColor('#eb7495')"></a></li>
+            <li><a href= "/reditorial" target="_blank"><h5>Cargar Editorial</h5><img src="escritor.png" onclick="imgSlider('escritor.png');  changeCircleColor('#d752b1')"></a></li>
+        </u1>
+       
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.libro').src= anything;
+        }
+
+        function changeCircleColor(color){
+            const circle= document.querySelector ('.circle');
+            circle.style.background=color;
+        }
+    </script>
+
+
+</body>
+</html>
